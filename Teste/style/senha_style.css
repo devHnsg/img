@@ -1,0 +1,153 @@
+html,
+body {
+    height: 100%;
+}
+body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+.senha__form {
+	width: 400px;
+    background: #fff;
+    color: #333;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 5px;
+}
+.senha__form .senha__header {
+    padding-top: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.senha__form .senha__header .senha__title {
+    font-size: 24px;
+    font-weight: 400;
+}
+.senha__form .senha__main {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.senha__form .senha__main .senha__group {
+    position: relative;
+}
+.senha__form .senha__main .senha__group .senha__input {
+    margin-top: 50px;
+    padding: 10px 10px 10px 5px;
+    color: #333;
+    font-family: "Open Sans", sans-serif;
+    width: 100%;
+    font-size: 16px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #d0dce7;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.senha__form .senha__main .senha__group .senha__input:focus {
+    outline: none;
+}
+.senha__form .senha__main .senha__group .senha__input:focus ~ label,
+.senha__form .senha__main .senha__group .senha__input:valid ~ label {
+    top: -20px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.senha__form .senha__main .senha__group .senha__label {
+    color: #333;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    -webkit-transition: .2s ease all;
+    transition: .2s ease all;
+}
+.senha__form .senha__main .senha__terms {
+    font-size: 14px;
+    color: #696969;
+    margin: 40px auto;
+    line-height: 19px;
+}
+.senha__form .senha__main .senha__terms a {
+    text-decoration: none;
+    color: #007ee5;
+}
+.senha__form .senha__button {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100%;
+    background: #28a746;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    height: 45px;
+    font-size: 14px;
+    bottom: 0;
+    position: absolute;
+}
+
+.senha__button:hover {
+  cursor: pointer;
+}
+
+.senha__bar {
+    position: relative;
+    display: block;
+}
+.senha__bar:before,
+.senha__bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #007ee5;
+    transition: .2s ease all;
+    -moz-transition: .2s ease all;
+    -webkit-transition: .2s ease all;
+}
+.senha__bar:before {
+    left: 50%;
+}
+.senha__bar:after {
+    right: 50%;
+}
+input:focus ~ .senha__bar:before,
+input:focus ~ .senha__bar:after {
+    width: 50%;
+}
+@media (min-width: 620px) {
+    body {
+        background: url('https://raw.githubusercontent.com/devHnsg/img/master/WALLPAPER-PADRAO-HNSG-OUTLOOK.png') no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .senha__form {
+        max-width: 400px;
+        height: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .senha__title {
+        position: relative;
+    }
+    .senha__footer {
+        text-align: center;
+    }
+    .senha__footer .senha__button {
+        bottom: initial;
+        position: initial;
+        width: 320px;
+    }
+}
